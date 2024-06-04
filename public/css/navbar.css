@@ -1,0 +1,68 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* background: linear-gradient(45deg, #F5DEB3, #FFF8DC, #F5DEB3); */
+    background-color:#000000ad;
+
+    /* background-color: #FFE4B5; */
+    margin: 0;
+    padding: 20px;
+    /* background: linear-gradient(135deg, #80ffdb, #b2ffab, #94d82d); */
+    /* background-image: url('../static/images/fondo3.jpg'); */ 
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+/* Importar la fuente Dancing Script desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.menu {
+    
+
+    background-color:#02B126;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.521); 
+}
+
+.menu h2{
+
+margin-bottom: 5px;
+color: white;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 4px;
+}
+
+a:hover {
+    background-color: #00490a;
+    color: #dfe7de;
+} 
+
+/* ----------------------------------------------------------- */
+

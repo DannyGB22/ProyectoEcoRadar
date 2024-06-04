@@ -1,0 +1,11 @@
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(50% - 10px); /* Ajustar el ancho según sea necesario */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+}
