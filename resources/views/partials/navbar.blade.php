@@ -11,10 +11,10 @@
             <li><a href="/"><i class="material-icons">recycling</i></a></li>
             <li><a href="/perfil"><i class="material-icons">person</i></a></li> 
             <li><a href="/busquedaCentros"><i class="material-icons">location_on</i></a></li> 
-            <li><a href="/tareas"><i class="material-icons">contact_support</i></a></li> 
-            <li><a href="/#"><i class="material-icons">location_searching</i></a></li> 
-            <li><a href="/progreso"><i class="material-icons">mail</i></a></li> 
-            <li><a href="/cerrar"><i class="material-icons">exit_to_app</i></a></li>
+            <li><a href="/acerca"><i class="material-icons">contact_support</i></a></li> 
+            <li><a href="/buscadorC"><i class="material-icons">location_searching</i></a></li> 
+            <li><a href="/informacion"><i class="material-icons">mail</i></a></li> 
+            <li><a href="/contactanos"><i class="material-icons">contacts</i></a></li>
 
         </ul>
     </nav>

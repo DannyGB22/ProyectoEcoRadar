@@ -24,3 +24,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'inicio');
 route::view('/busquedaCentros', 'centros');
+route::view('/acerca', 'AcercaDe');
+route::view('/contactanos', 'contacto');
+route::view('/informacion', 'info');
+route::view('/buscadorC', 'Buscador');
