@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,18 +15,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index']);
+Route::get('/auth/login', [HomeController::class, 'login']);
+Route::get('/perfil', [HomeController::class, 'perfil']);
 
 
-Route::view('/', 'inicio');
-route::view('/busquedaCentros', 'centros');
-route::view('/acerca', 'AcercaDe');
-route::view('/contactanos', 'contacto');
-route::view('/informacion', 'info');
-route::view('/buscadorC', 'Buscador');
+
+Route::get('/', [Controller::class, 'inicio']);
+route::get('/busquedaCentros', [Controller::class, 'centros']);
+route::get('/acerca', [Controller::class, 'acerca_de']);
+route::get('/contactanos', [Controller::class, 'contacto']);
+route::get('/informacion', [Controller::class, 'info']);
+route::get('/buscadorC', [Controller::class, 'buscador']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
