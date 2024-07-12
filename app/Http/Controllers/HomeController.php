@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -23,16 +22,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('dashboard');
     }
 
-    /**
-     * Show the user profile.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
+    // Agrega el método 'perfil'
     public function perfil()
     {
-        return view('perfil'); // Asegúrate de tener una vista llamada "perfil.blade.php" en resources/views
+        return view('perfil'); // Asegúrate de tener una vista 'perfil.blade.php' en 'resources/views'
     }
 }
