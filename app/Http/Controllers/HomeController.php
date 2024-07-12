@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    /**
+     * Show the user profile.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function perfil()
+    {
+        return view('perfil'); // Asegúrate de tener una vista llamada "perfil.blade.php" en resources/views
+    }
 }
