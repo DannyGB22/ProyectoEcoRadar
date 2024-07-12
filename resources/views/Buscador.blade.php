@@ -14,7 +14,8 @@
                 <p class="text-gray-700 mb-4">
                     Encuentra los centros de reciclaje más cercanos a tu ubicación y obtén información detallada sobre los materiales que aceptan y los procedimientos de reciclaje.
                 </p>
-                <form class="mb-4">
+                <!-- Formulario de búsqueda -->
+                <form action="{{ route('buscarCentros') }}" method="GET" class="mb-4">
                     <div class="mb-4">
                         <label for="ubicacion" class="block text-gray-700 mb-2">Ubicación:</label>
                         <input type="text" id="ubicacion" name="ubicacion" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-green-500" placeholder="Introduce tu ubicación">
@@ -30,6 +31,26 @@
                 <p class="text-gray-700">
                     EcoRadar proporciona información detallada sobre los tipos de materiales no reciclables y la importancia de reciclarlos. Utiliza nuestro motor de búsqueda para encontrar centros de reciclaje cercanos, detalles sobre los procedimientos de reciclaje y recursos educativos para fomentar la sostenibilidad.
                 </p>
+                <!-- Resultados de búsqueda -->
+                @if(isset($centros) && $centros->count() > 0)
+                    <div class="mt-6">
+                        <h2 class="text-2xl font-bold text-green-600 mb-4">Resultados de la Búsqueda</h2>
+                        <ul>
+                            @foreach($centros as $centro)
+                                <li class="mb-4 p-4 bg-gray-200 rounded-lg shadow-lg">
+                                    <h3 class="text-xl font-bold">{{ $centro->nombre }}</h3>
+                                    <p><strong>Ubicación:</strong> {{ $centro->ubicacion }}</p>
+                                    <p><strong>Materiales Aceptados:</strong> {{ $centro->materiales_aceptados }}</p>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @elseif(isset($centros))
+                    <div class="mt-6">
+                        <h2 class="text-2xl font-bold text-green-600 mb-4">Resultados de la Búsqueda</h2>
+                        <p class="text-gray-700">No se encontraron centros de reciclaje que coincidan con los criterios de búsqueda.</p>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
