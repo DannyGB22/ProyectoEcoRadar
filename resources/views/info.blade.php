@@ -16,7 +16,8 @@
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
             <img src="{{ asset('images/img1.png') }}" alt="Consejos sobre reciclaje" class="w-full h-48 object-cover">
             <div class="p-6">
-                <h5 class="text-2xl font-bold mb-4">Consejos sobre reciclaje</h5>
+               {{--  <h5 class="text-2xl font-bold mb-4">Consejos sobre reciclaje</h5> --}}
+                <a class="text-2xl font-bold mb-4" href="https://www.nalgeneiberia.com/blog/reciclaje/6-consejos-de-reciclaje/" target="_blank">Consejos sobre reciclaje</a>
                 <p class="text-gray-700 mb-4">
                     Descubre consejos prácticos para mejorar tus hábitos de reciclaje y reducir tu impacto ambiental. Aprende cómo separar correctamente los residuos y mucho más.
                 </p>

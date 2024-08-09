@@ -17,8 +17,8 @@
                     <li><a href="/busquedaCentros"><i class="material-icons">location_on</i></a></li> 
                     <li><a href="/acerca"><i class="material-icons">contact_support</i></a></li> 
                     <li><a href="/buscadorC"><i class="material-icons">location_searching</i></a></li> 
-                    <li><a href="/informacion"><i class="material-icons">mail</i></a></li> 
-                    <li><a href="/contactanos"><i class="material-icons">contacts</i></a></li>
+                    <li><a href="/informacion"><i class="material-icons">contacts</i></a></li> 
+                    <li><a href="/contactanos"><i class="material-icons">mail</i></a></li>
                 </ul>
             </div>
             <div>
